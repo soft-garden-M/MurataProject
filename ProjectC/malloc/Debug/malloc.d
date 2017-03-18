@@ -1,0 +1,1 @@
+malloc.d: ../malloc.c

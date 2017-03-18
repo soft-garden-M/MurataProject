@@ -1,0 +1,1 @@
+keisan.d: ../keisan.c

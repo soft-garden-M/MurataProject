@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : ProjectC.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int begin = 10;
+	int end = 10;
+	int sum = 0;
+	int maxValue = 0;
+	sum = count(begin,end);
+	//printf("%d",sum);
+	maxValue = intMax(16,10,5);
+	printf("%d",maxValue);
+	return EXIT_SUCCESS;
+}
+
+int count(int begin,int end){
+	int sum = 0;
+	if (begin < end){
+		for (begin;begin <= end ; begin++){
+			sum = sum + begin;
+		}
+		return sum;
+	}else{
+		return -1;
+	}
+}
+int intMax(int a,int b,int c){
+	//bよりaが大きい
+	if(a > b) {
+		//cよりaが大きい
+		if(a > c){
+			return a;
+		}
+	}else if(b > c){
+		return b;
+	}else{
+		return c;
+	}
+}

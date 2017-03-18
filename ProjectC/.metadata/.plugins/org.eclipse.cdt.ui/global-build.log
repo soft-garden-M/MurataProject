@@ -1,0 +1,52 @@
+14:12:07 **** インクリメンタル・ビルド of configuration Debug for project keisan ****
+make all 
+Building file: ../keisan.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"keisan.d" -MT"keisan.d" -o "keisan.o" "../keisan.c"
+../keisan.c: In function ‘main’:
+../keisan.c:25:2: warning: implicit declaration of function ‘keisan’ [-Wimplicit-function-declaration]
+  c = keisan(a,b,ADD);
+  ^
+../keisan.c:26:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("足し算%d\r\n",c);
+  ^
+../keisan.c:26:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../keisan.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../keisan.c
+ 
+Building target: keisan
+Invoking: Cross GCC Linker
+gcc  -o "keisan"  ./keisan.o   
+Finished building target: keisan
+ 
+14:12:10 **** インクリメンタル・ビルド of configuration Debug for project keisan ****
+make all 
+make: `all' に対して行うべき事はありません.
+14:12:39 **** インクリメンタル・ビルド of configuration Debug for project keisan ****
+make all 
+Building file: ../keisan.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"keisan.d" -MT"keisan.d" -o "keisan.o" "../keisan.c"
+../keisan.c: In function ‘main’:
+../keisan.c:24:2: warning: implicit declaration of function ‘keisan’ [-Wimplicit-function-declaration]
+  c = keisan(a,b,ADD);
+  ^
+../keisan.c:25:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("足し算%d\r\n",c);
+  ^
+../keisan.c:25:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../keisan.c:15:6: warning: unused variable ‘kei’ [-Wunused-variable]
+  int kei;
+      ^
+../keisan.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../keisan.c
+ 
+Building target: keisan
+Invoking: Cross GCC Linker
+gcc  -o "keisan"  ./keisan.o   
+Finished building target: keisan
+ 

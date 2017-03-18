@@ -1,0 +1,24 @@
+/*
+ * uruu.c
+ *
+ *  Created on: 2017/03/11
+ *      Author: murata
+ */
+
+
+int main(void){
+    int toshi = 2017;
+    int uruu = 5;
+    int c = toshi % uruu;
+    char hantei;
+
+    if (c = 0){
+    	hantei = "うるう年です。"
+    }else{
+    	hantei = "うるう年ではありません。"
+    }
+
+    printf("%d\n",hantei); /*余りは『1』*/
+
+}
+

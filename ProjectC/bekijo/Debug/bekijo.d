@@ -1,0 +1,1 @@
+bekijo.d: ../bekijo.c

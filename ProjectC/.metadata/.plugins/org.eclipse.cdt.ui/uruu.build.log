@@ -1,0 +1,37 @@
+16:16:28 **** インクリメンタル・ビルド of configuration Debug for project uruu ****
+make all 
+Building file: ../uruu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"uruu.d" -MT"uruu.d" -o "uruu.o" "../uruu.c"
+../uruu.c: In function ‘main’:
+../uruu.c:15:5: warning: implicit declaration of function ‘uruuhantei’ [-Wimplicit-function-declaration]
+     c = uruuhantei(toshi,uruu);
+     ^
+../uruu.c:16:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if (c = 0){
+     ^
+../uruu.c:17:6: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+      printf("%d","うるう年です。");
+      ^
+../uruu.c:17:6: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../uruu.c:17:6: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
+../uruu.c:19:6: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+      printf("うるう年です。%d");
+      ^
+../uruu.c:19:6: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+../uruu.c:22:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("%d\n",hantei[0]);
+     ^
+../uruu.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../uruu.c
+ 
+Building target: uruu
+Invoking: GCC C Linker
+gcc  -o "uruu"  ./uruu.o   
+Finished building target: uruu
+ 
+
+16:16:28 Build Finished (took 610ms)
+

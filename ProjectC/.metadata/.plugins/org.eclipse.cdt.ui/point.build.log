@@ -1,0 +1,20 @@
+16:48:44 **** インクリメンタル・ビルド of configuration Debug for project point ****
+make all 
+Building file: ../point.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"point.d" -MT"point.d" -o "point.o" "../point.c"
+../point.c: In function ‘main’:
+../point.c:14:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("%d\r\n",*ptr);
+  ^
+../point.c:14:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../point.c:18:21: error: request for member ‘a’ in something not a structure or union
+  printf("%d\r\n",ptr->a);
+                     ^
+../point.c:19:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [point.o] エラー 1
+
+16:48:44 Build Finished (took 220ms)
+

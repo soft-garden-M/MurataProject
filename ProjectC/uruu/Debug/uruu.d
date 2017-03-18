@@ -1,0 +1,1 @@
+uruu.d: ../uruu.c

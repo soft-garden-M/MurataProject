@@ -1,0 +1,23 @@
+15:06:28 **** インクリメンタル・ビルド of configuration Debug for project cube ****
+make all 
+Building file: ../posit.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"posit.d" -MT"posit.d" -o "posit.o" "../posit.c"
+../posit.c: In function ‘main’:
+../posit.c:38:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("縦%d,横%d,高さ%d",hikakux->tate,hikakux->yoko,hikakux->takasa);
+  ^
+../posit.c:38:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../posit.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../posit.c
+ 
+Building target: cube
+Invoking: GCC C Linker
+gcc  -o "cube"  ./posit.o   
+Finished building target: cube
+ 
+
+15:06:29 Build Finished (took 439ms)
+

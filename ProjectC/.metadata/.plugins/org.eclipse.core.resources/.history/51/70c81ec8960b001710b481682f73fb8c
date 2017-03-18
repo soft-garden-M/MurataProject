@@ -1,0 +1,50 @@
+/*
+ * keisan.c
+ *
+ *  Created on: 2017/03/18
+ *      Author: murata
+ */
+
+
+int main(void){
+    #define ADD 0
+    #define SUB  1
+    #define MUL  2
+    #define DIVI  3
+
+	int kei;
+	kei = ADD;
+
+	int a;
+	a = 2;
+	int b;
+	b = 4;
+	int c;
+
+	c = keisan(a,b,kei);
+	printf("%d",c);
+
+
+}
+
+
+int keisan(int suuji1,int suuji2, int kei){
+	int kekka;
+	switch (kei = 0) {
+	Case 0:
+	kekka = suuji1 + suuji2;
+	break;
+	Case 1:
+	kekka = suuji1 - suuji2;
+	break;
+	Case 2:
+	kekka = suuji1 * suuji2;
+	break;
+	Case 3:
+	kekka = suuji1 / suuji2;
+	break;
+	}
+
+	return kekka;
+
+}

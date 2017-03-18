@@ -1,0 +1,14 @@
+/*
+ * malloc.c
+ *
+ *  Created on: 2017/03/11
+ *      Author: murata
+ */
+
+
+int main(void) {
+
+	int size = sizeof(int);
+	void *malloc(int size);
+	printf("%d",size);
+}
